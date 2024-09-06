@@ -140,67 +140,67 @@ public:
             }
         }
 
-        if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Tab)))
+        if (ImGui::IsKeyPressed(ImGuiKey_Tab))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::TAB, mod);
             return;
         }
-        if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Escape)))
+        if (ImGui::IsKeyPressed(ImGuiKey_Escape))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::ESCAPE, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Enter)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_Enter))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::RETURN, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Delete)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_Delete))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::DEL, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Home)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_Home))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::HOME, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_End)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_End))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::END, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_Backspace)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_Backspace))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::BACKSPACE, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_RightArrow)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_RightArrow))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::RIGHT, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_LeftArrow)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_LeftArrow))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::LEFT, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_UpArrow)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_UpArrow))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::UP, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_DownArrow)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_DownArrow))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::DOWN, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_PageDown)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_PageDown))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::PAGEDOWN, mod);
             return;
         }
-        else if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_PageUp)))
+        else if (ImGui::IsKeyPressed(ImGuiKey_PageUp))
         {
             buffer.GetMode()->AddKeyPress(ExtKeys::PAGEUP, mod);
             return;
