@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stdint.h>
+
 #include "zep/mcommon/utf8/unchecked.h"
 #include "gap_buffer.h"
 
