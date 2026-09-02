@@ -10,13 +10,17 @@
 
 #if defined(ZEP_FEATURE_CPP_FILE_SYSTEM)
 
-// Unix/Clang is behind
-#ifdef __unix__
-#include <experimental/filesystem>
-namespace cpp_fs = std::experimental::filesystem::v1;
-#else
+// Feature-test the header rather than the OS. The old check was #ifdef __unix__,
+// which selects a standard library by asking about the platform: libstdc++ has
+// had <filesystem> for years and only still compiles the old branch because it
+// also ships <experimental/filesystem>. libc++ never did, so anything defining
+// __unix__ while using libc++ - emscripten, for one - fails on the include.
+#if defined(__cpp_lib_filesystem) || __has_include(<filesystem>)
 #include <filesystem>
 namespace cpp_fs = std::filesystem;
+#else
+#include <experimental/filesystem>
+namespace cpp_fs = std::experimental::filesystem::v1;
 #endif
 
 namespace Zep
